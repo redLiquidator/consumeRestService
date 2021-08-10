@@ -52,6 +52,12 @@
 			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.contract-dto</groupId>
+			<artifactId>contract-dto</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
