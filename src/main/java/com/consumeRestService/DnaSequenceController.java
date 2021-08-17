@@ -11,8 +11,9 @@ import com.contractdto.DnaSequence;
 @RestController
 @RequestMapping(DnaSequenceController.DNASEQUENCE_BASE_URI)
 public class DnaSequenceController {
-public static final String DNASEQUENCE_BASE_URI = "dna/v1/dnaSequence";
 	
+public static final String DNASEQUENCE_BASE_URI = "dna/v1/dnaSequence";
+	//sample | http://localhost:8088/dna/v1/dnaSequence/10
 	@RequestMapping(value="{dnaLength}")
 	public DnaSequence getDnaSequenceByLength(@PathVariable final int dnaLength) {
 		DnaSequence dnaSequence = new DnaSequence ();
@@ -30,7 +31,7 @@ public static final String DNASEQUENCE_BASE_URI = "dna/v1/dnaSequence";
 				    	seq = seq+ 'T';
 				    }
 				}
-		System.out.println("seq "+seq);
+		System.out.println("seq consumeRestService "+seq);
 		dnaSequence.setSequence(seq);
 		dnaSequence.setCreationDate(new Date());
 		return dnaSequence;
