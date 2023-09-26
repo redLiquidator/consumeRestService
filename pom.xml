@@ -39,13 +39,6 @@
 			<optional>true</optional>
 		</dependency>
 		
-		<!-- copied from contract-dto  -->
-		<dependency>
-			<groupId>com.contract-dto</groupId>
-			<artifactId>contract-dto</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -53,11 +46,11 @@
 			<scope>provided</scope>
 		</dependency>
 		
-		<dependency>
+<!--	<dependency>
 			<groupId>com.contract-dto</groupId>
 			<artifactId>contract-dto</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<build>
